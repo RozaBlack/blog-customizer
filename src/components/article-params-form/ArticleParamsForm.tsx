@@ -40,7 +40,10 @@ export const ArticleParamsForm = (setArticleStateProps: ArticleStateProps) => {
 	};
 
 	const formReset = () => {
-		return() => {setFormState(defaultArticleState)};
+		return() => {
+			setFormState(defaultArticleState);
+			setArticleState(defaultArticleState);
+		};
 	};
 
 	const formSubmit = (event: FormEvent) => {
