@@ -85,6 +85,7 @@
 		]
 	},
 	"dependencies": {
+		"@playwright/test": "^1.50.1",
 		"clsx": "^2.1.1",
 		"core-js": "^3.40.0",
 		"react": "^18.3.1",
