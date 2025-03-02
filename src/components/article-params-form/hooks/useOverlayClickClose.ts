@@ -12,6 +12,8 @@ export const useOverlayClickClose = ({
 	onClose,
 }: UseOverlayClickClose) => {
 	useEffect(() => {
+		if (!isOpen) return;
+
 		const handleClick = (event: MouseEvent) => {
 			const { target } = event;
 			if (
